@@ -4,7 +4,7 @@ import logo from './1.jpg';
 function App() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-12-12`) - +new Date();
+    const difference = +new Date(`${year}-02-13`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -51,7 +51,7 @@ function App() {
       height: '100vh',
     }}>
       <img src={logo} className="App-logo" alt="logo" />
-      <h1 style={{ zIndex: 1 }}>Буковель 12.12.2020 ЛЮТИЙ ДВІЖ</h1>
+      <h1 style={{ zIndex: 1 }}>Буковель 12.02.2021 ЛЮТИЙ ДВІЖ</h1>
       <div>
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
       </div>
